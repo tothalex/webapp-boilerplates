@@ -8,7 +8,7 @@
   },
   "workspaces": [
     "client",
-    "lib",
+    "shared/**",
     "server"
   ],
   "dependencies": {

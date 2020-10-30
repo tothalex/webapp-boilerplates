@@ -1,6 +1,11 @@
 {
   "name": "shared",
   "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+  "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^4.0.3"
   }
