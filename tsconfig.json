@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "jsx": "react",
+    "paths": {
+      "~modules/*": ["server/modules/*"] 
+    },
+    "include": ["src/server/**/*.ts"],
+    "exclude": [".next"]
+  }
+}
