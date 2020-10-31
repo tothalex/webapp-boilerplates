@@ -11,11 +11,12 @@
     "outDir": "./dist",
     "baseUrl": "./src",
     "incremental": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "paths": {
-      "~modules/*": ["server/modules/*"] 
-    },
-    "include": ["src/server/**/*.ts"],
-    "exclude": [".next"]
-  }
+      "~modules/*": ["server/modules/*"],
+      "~shared/*": ["shared/*"]
+    } 
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [".next"]
 }
