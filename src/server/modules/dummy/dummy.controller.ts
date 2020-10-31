@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common'
 
-import { DummyService } from '~modules/dummy/dummy.service'
+import { DummyService } from '~server/modules/dummy/dummy.service'
 import { Dummy } from '~shared/types/dummy'
 
 @Controller('api/dummy')

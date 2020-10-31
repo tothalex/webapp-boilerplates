@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
@@ -9,13 +10,8 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
     "incremental": true,
-    "jsx": "preserve",
-    "paths": {
-      "~modules/*": ["server/modules/*"],
-      "~shared/*": ["shared/*"]
-    } 
+    "jsx": "preserve" 
   },
   "include": ["src/**/*.ts"],
   "exclude": [".next"]
