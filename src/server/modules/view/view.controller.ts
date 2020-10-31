@@ -8,7 +8,7 @@ export class ViewController {
   constructor(private viewService: ViewService) {}
 
   @Get('*')
-  templates(@Req() req: Request, @Res() res: Response) {
+  static(@Req() req: Request, @Res() res: Response) {
     const handle = this.viewService.getNextServer().getRequestHandler()
     handle(req, res)
   }
